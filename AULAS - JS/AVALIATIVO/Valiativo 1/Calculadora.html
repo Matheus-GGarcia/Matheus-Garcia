@@ -1,0 +1,39 @@
+<script>
+    let n1 = prompt("Digite um Numero 😁")
+    let n2 = prompt("Digite outro Numero 😁")
+    let Calcular = prompt("Escolha a Operaçao Matematica")
+
+    n1 = parseFloat(n1);
+    n2 = parseFloat(n2);
+
+  function Calculadora(n1, n2, Calcular) {
+      let resultado;
+  
+      switch (Calcular.toUpperCase()) {
+          case "SOMA":
+              resultado =  n1 + n2
+          break;
+          case "SUBTRAÇÃO":
+              resultado = n1 - n2
+          break;
+          case "MULTIPLICAÇÃO":
+              resultado = n1 * n2
+          break;
+          case "DIVISÃO":
+              if(n1 && n2){
+                  resultado = n1 / n2
+              }else{
+                  alert ("Sua Divisão Foi por 0")
+                      return;
+              }
+        
+              break;
+          default:
+              alert("Operação Inválida")
+          
+      }
+      alert(`Resultado: ${resultado}`)
+  
+  }
+      Calculadora(n1, n2, Calcular)
+  </script> 

@@ -1,0 +1,102 @@
+<!-- <script>
+  const n1 = prompt("Digite um Numero 😁")
+  const n2 = prompt("Digite outro Numero 😁")
+  const Calcular = prompt("Escolha a Operaçao Matematica")
+
+ 
+
+function Calculadora(n1, n2, Calcular) {
+    let resultado;
+
+    switch (Calcular.toUppercase()) {
+        case "SOMA":
+            resultado =  n1 + n2
+        break;
+        case "SUBTRAÇÃO":
+            resultado = n1 - n2
+        break;
+        case "MULTIPLICAÇÃO":
+            resultado = n1 * n2
+        break;
+        case "DIVISÃO":
+            if(n1 && n2){
+                resultado = n1 / n2
+            }else{
+                alert ("Sua Divisão Foi por 0")
+                    return;
+            }
+      
+            break;
+        default:
+            alert("Operação Inválida")
+        
+    }
+    alert(`Resultado: ${resultado}`)
+
+}
+    Calculadora(n1, n2, Calcular)
+</script> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+   
+</head>
+<body>
+
+    <h1><i><center>CALCULADORA</center></i></h1>
+    <center><input type="number" id="n1" placeholder="Número 1" required></center>
+    <center><input type="number" id="n2" placeholder="Número 2" required></center>
+    
+   <center><select id="operacao">
+        <option value="soma">Soma</option>
+        <option value="subtracao">Subtração</option>
+        <option value="multiplicacao">Multiplicação</option>
+        <option value="divisao">Divisão</option>
+    </select></center>
+    
+    <center><button onclick="Calcular()">Calcular</button></center>
+    
+    <center><h3>Resultado: <span id="resultado"></span></h3></center>
+
+    <script>
+        function Calcular() {
+            const n1 = parseFloat(document.getElementById('n1').value);
+            const n2 = parseFloat(document.getElementById('n2').value);
+            const Calcular = document.getElementById('Calcular').value;
+            let resultado;
+
+            switch (Calcular) {
+                case 'soma':
+                    resultado = n1 + n2;
+                    break;
+                case 'subtracao':
+                    resultado = n1 - n2;
+                    break;
+                case 'multiplicacao':
+                    resultado = n1 * n2;
+                    break;
+                case 'divisao':
+                    if (n2 && n1) {
+                        resultado = n1 / n2;
+                    } else {
+                        resultado = 'Sua Divisão foi por 0';
+                    }
+                    break;
+                default:
+                    resultado = 'Operação inválida!';
+            }
+
+            document.getElementById('resultado').innerText = resultado;
+        }
+    </script>
+
+</body>
+</html>
+ 

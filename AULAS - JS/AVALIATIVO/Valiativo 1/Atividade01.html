@@ -1,0 +1,55 @@
+
+
+<!-- Primeiro Código
+    
+    
+    <script>
+
+let notas = prompt("Informe a sua Nota");
+
+let soma = notas[0] + notas[1] + notas[2];
+
+
+let media = soma / notas.length;
+
+
+let resultado;
+if (notas >= 7) {
+    resultado = "Aprovado";
+} else if (notas < 6){
+    resultado = "Reprovado";
+}
+ console.log(media);
+ console.log(resultado);
+
+alert(`Voce Foi: ${resultado}, Sua media Final : ${media}`)
+
+
+</script>-->
+
+
+<!--  O Código Melhorado Depois de Muita Pesquisa 😁    -->
+<script>
+    // Informe suas Notas uma apos a outra usanso Virgula
+    let notasInput = prompt("Informe suas notas, separadas por virgula:");
+
+    // Aqui Este código converte uma String em um Array Numerico
+    let notas = notasInput.split(",").map(Number);
+
+    // Calcula a soma das notas juntas usando reduce
+    let soma = notas.reduce((acc, nota) => acc + nota, 0);
+
+    let media = soma / notas.length;
+
+    let resultado;
+    if (media >= 7) {
+        resultado = "Aprovado";
+    } else if (media < 6) {
+        resultado = "Reprovado";
+    } else {
+        resultado = "Em recuperação"; 
+    }
+
+
+    alert(`Voce foi: ${resultado}, Sua media final: ${media}`);
+</script>
