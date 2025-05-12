@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=g, initial-scale=1.0">
+    <title>Formulário 2 Electric Boogaloo</title>
+</head>
+<body>
+    <form action="#" align="center" method="get">
+        
+        <select name="sudeste" id="sudeste">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais </option>
+        </select>
+        <br>
+        <datalist id="Locomoção">
+            <option value="Bicicleta">Bicicleta</option>
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+            <option value="Charete">Charete</option>
+            <option value="Fiat">Fiat</option>
+        </datalist>
+        <input autocomplete="on" list="Locomoção" name="meiosTransportes" id="meiosTransportes" placeholder="Seu Meio de Trasnporter" />
+        <br>
+        0
+        <input type="range" id="quilometros" name="quilometros" min="200" max="1200"/>  
+        100
+        <br>
+        <input type="submit" value="Enviar" style="color: blueviolet;">
+    </form>
+</body>
+</html>
