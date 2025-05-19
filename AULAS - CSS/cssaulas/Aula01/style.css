@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+
+    background-color: aqua;
+    font-family: "Eater", serif;
+    font-size: large;
+    color: blueviolet;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    margin: 10px;
+}
+
+nav img {
+
+    height: 100vh;
+}
+nav p{
+    color: khaki;
+    margin-left: 30px;
+    align-items: center;
+    
+}
+nav a{
+    text-decoration: none;
+}
+
+nav button  {
+    background-color: royalblue;
+    width: 150px;
+    display: flex;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: auto; 
+ 
+}
+nav button a{
+    color: aqua;
+    align-items: center;
+
+}
+nav button:hover{
+    background-color: black;
+}
+main {
+    background-color: blueviolet;
+    padding: 10rem;
+    color: rgb(255, 0, 179);
+    margin: 200px;
+    width: 60%;
+    border-radius: 35px;
+
+   
+}
+main span{
+    background-color: cadetblue;
+    border-radius: 35px;
+}
+main h1 span{
+    background-color: black;
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+main section p{
+    background-color: darkmagenta;
+}
+main form{
+    justify-items: center;
+    white-space: pre-wrap;
+}
