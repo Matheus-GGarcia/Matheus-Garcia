@@ -20,6 +20,7 @@ nav img {
 
     height: 100vh;
 }
+
 nav p{
     color: khaki;
     margin-left: 30px;
@@ -65,6 +66,7 @@ main h1 span{
     background-color: black;
     border-radius: 20px;
     padding: 1rem;
+    text-shadow: 5px;
 
 }
 main section p{
