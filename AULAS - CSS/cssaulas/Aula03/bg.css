@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: black;
+    text-align: center;
+}
+
+body{
+    
+    background-image: url("assets/325c76178050783.Y3JvcCw5MTEsNzEzLDE4MCww.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+
+}
