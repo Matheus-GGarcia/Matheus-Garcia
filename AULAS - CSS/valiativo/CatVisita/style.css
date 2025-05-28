@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Visita{
+    display: flex;
+    background-color: blueviolet;
+    width: 1000px;
+    height: 600px;
+
+}
+
+.imagem{
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+}
+.imagem img{
+    width: 300px;
+    height: 600px ;
+}
+
+#Dados{
+    justify-content: center;
+    padding: 20px;
+    height: 90px;
+}
+

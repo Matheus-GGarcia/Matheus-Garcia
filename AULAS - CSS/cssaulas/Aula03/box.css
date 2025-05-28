@@ -3,14 +3,28 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 .quadrado{
     height: 150px;
     width: 150px;
+}
+.quadrado_roxo{
+   
     background-color: blueviolet ;
 }
 
 .quadrado_azul{
     background-color: blue;
+    border: 10px solid black;
+}
+
+#cachorro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: brown ;
+    border: 40px blueviolet solid;
+    padding: 20px;
+    height: 90px;
+
 }
