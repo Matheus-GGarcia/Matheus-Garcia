@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(134, 85, 197, 1) 55%, rgba(252, 70, 107, 1) 0%); 
+    padding: 10px;
+   /* flex-direction: column;
+    justify-content: space-between;
+     */
+     flex-wrap: nowrap;
+     flex-direction: row-reverse;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 80vw;
+     height: 30vw;
+     margin: 0 auto;
+    
+}
+.Caixa1{
+    width: 5cm;
+    height: 5cm;
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(134, 85, 197, 1) 55%, rgba(252, 70, 107, 1) 0%);
+    border: 5px solid black;
+    margin: 10px;
+    justify-content: center;
+    order: 1;
+    
+}
+.Caixa2{
+    width: 5cm;
+    height: 5cm;
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(134, 85, 197, 1) 55%, rgba(252, 70, 107, 1) 0%);
+    border: 5px solid black;
+    margin: 10px;
+    justify-content: center;
+    order: 3;
+
+}
+#foto{
+    width: 20%;
+    height: 20%;
+
+}
+.Caixabotao{
+    width: 2cm;
+    height: 2cm;
+    align-self: center;
+    margin: 0 auto;
+    background: #3F5EFB;
+    background: radial-gradient(circle,rgba(63, 94, 251, 1) 0%, rgba(134, 85, 197, 1) 55%, rgba(252, 70, 107, 1) 0%);
+    border: 5px solid black;
+    margin: 10px;
+    order: 2;
+ 
+}
+.Caixabotao a input{
+    background-color: blueviolet;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
