@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    background-color: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+    /* Determina um container flexivel */
+    gap: 10px; /*gap é um wspaço que existe entre os itens*/
+   
+}
+
+.quadrado1{
+    background-color: blueviolet;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+    flex-basis: 300px; /*Determina o tamanho minimo inicial dos elementos flexiveis*/
+
+}
+.quadrado2{
+    background-color: red;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+    flex: 2 3 400px; /*Apenas Flex anrevia os 3 elementos em um só: Grow, Shrink, basis*/
+}
+.quadrado3{
+    background-color: blue;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+}
+.quadrado4{
+    background-color: yellowgreen;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+    flex-grow: 3; /*Determina o tamanho de um determinado elemento*/
+    flex-shrink: 3; /*O encolhimento do elemento fica rápido*/
+    flex-basis: 300px;
+}
+.quadrado5{
+    background-color: brown;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.quadrado6{
+    background-color: orange;
+    color: antiquewhite;
+    width: 5cm;
+    height: 5cm;
+    border: 10px solid black;
+    font-size: 70px;
+    text-align: center;
+    border-radius: 20px;
+}
