@@ -14,12 +14,13 @@ body{
 }
 
 header{
-    background-color: gray;
+    background: #c2c2c2;
+    background: linear-gradient(183deg,rgba(194, 194, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    border-radius: 60px;
-    width: 20%;
+    border-radius: 40px;
+    width: 25%;
     padding: 10px;
     margin: 20px auto;
 }
@@ -30,11 +31,16 @@ navbar {
 
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.logo {
+    display: flex;              
+    justify-content: center;   
+    align-items: center;      
+    height: auto;  /* Altura total da tela */
+}
+.logo img {
+    width: 100px;              
+    height: auto;             
+    display: block;  /* Garantir que a imagem seja um bloco */
 }
 
 .navbar ul {
@@ -102,23 +108,60 @@ main {
     color: rgb(0, 0, 0);
 }
 
-
-.Promo{
-    width: 150%;
-    margin-left: 70px;
+.Promo {
+    width: 100%; 
+    overflow: hidden; /* Impede o transbordamento da imagem */
 }
+
+.Promo img {
+    width: 100%; 
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+     margin-top: 20px;
+     border-radius: 10px;
+}
+
+.Promo h1{
+    color: black;
+    text-align: center;
+     margin-top: 20px;
+
+}
+h1{
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+
  /*Começa as Produtos*/
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start; /* Para a imagem e o texto começarem do mesmo nível */
+    flex-wrap: nowrap; /* Mantenha tudo em uma linha */
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    text-align: center;
-   
+    max-width: 2000px; /* Aumente a largura máxima se necessário */
+    text-align: left; /* Alinhar texto à esquerda */
+    margin-top: 20px;
+    gap: 20px; /* Aumente o espaço entre os itens */
 }
+
+
+.produto {
+    background-color: aliceblue;
+    margin: 10px; /* Remova ou ajuste se não necessário */
+    max-width: 400px; /* Largura máxima para cada produto */
+    border-radius: 10px;
+    padding: 10px; /* Adicione padding para espaçar melhor o conteúdo */
+    display: flex; /* Adicione display flex para o conteúdo interno */
+    flex-direction: column; /* Para que o texto fique em coluna */
+    justify-content: center;
+    align-items: center;
+}
+
 
 .produto-imagem {
     max-width: 100%;
@@ -177,8 +220,4 @@ select {
 
 .comprar:hover {
     background-color: #c0392b;
-}
-.produto{
-    flex: 1;
-    margin: 10px;
 }
