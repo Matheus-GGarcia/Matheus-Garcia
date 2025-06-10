@@ -1,21 +1,21 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #737070;
-    background: linear-gradient(256deg,rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
     margin: 15px;
     padding: 10px;
 }
 
-header{
+header {
     background: #c2c2c2;
-    background: linear-gradient(183deg,rgba(194, 194, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(183deg, rgba(194, 194, 194, 1) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -23,6 +23,7 @@ header{
     width: 25%;
     padding: 10px;
     margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 navbar {
@@ -32,21 +33,25 @@ navbar {
 }
 
 .logo {
-    display: flex;              
-    justify-content: center;   
-    align-items: center;      
-    height: auto;  /* Altura total da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* Altura total da tela */
 }
+
 .logo img {
-    width: 100px;              
-    height: auto;             
-    display: block;  /* Garantir que a imagem seja um bloco */
+    width: 100px;
+    height: auto;
+    display: block;
+    /* Garantir que a imagem seja um bloco */
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
-    gap: 15px; /* Espaço entre os botões */
+    gap: 15px;
+    /* Espaço entre os botões */
 }
 
 .navbar li {
@@ -59,37 +64,40 @@ navbar {
     color: rgb(255, 255, 255);
 }
 
-.navbar button {
+.navbar a {
     border-radius: 40px;
     padding: 10px 20px;
-    cursor: pointer; /* Muda o cursor para indicar que é clicável*/
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável*/
     background-image: linear-gradient(135deg, #4e4e4e 40%, #000000);
     border: none;
     color: white;
     cursor: pointer;
 }
 
-.navbar button:hover {
+.navbar a:hover {
     background-color: rgb(224, 224, 224);
     color: rgb(0, 0, 0);
 }
 
-.navbar button:active {
+.navbar a:active {
     box-shadow: 2px 2px 5px #000000;
 }
 
-.navbar img{
+.navbar img {
     width: 90px;
     height: auto;
     justify-items: center;
     margin-right: 10px;
 }
+
 main {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     width: 40%;
     padding: 20px;
-    margin: 20px auto; /* Centraliza o main */
+    margin: 20px auto;
+    /* Centraliza o main */
 }
 
 .box h1 {
@@ -109,69 +117,154 @@ main {
 }
 
 .Promo {
-    width: 100%; 
-    overflow: hidden; /* Impede o transbordamento da imagem */
+    width: 100%;
+    overflow: hidden;
+    /* Impede o transbordamento da imagem */
 }
 
 .Promo img {
-    width: 100%; 
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove o espaço em branco abaixo da imagem */
-     margin-top: 20px;
-     border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.8s ease-out forwards;
+    transition: transform 0.9s ease, box-shadow 0.3s ease;
 }
 
-.Promo h1{
+
+.Promo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 20px rgba(21, 5, 168, 0.4);
+}
+
+/* @keyframes fadeIn: Isso declara uma animação de quadros-chave chamada fadeIn. Você fará referência a esse nome na animationpropriedade de uma regra CSS para aplicar a animação a um elemento. */
+@keyframes fadeIn {
+    /*from { ... }: Este bloco define o estado inicial da animação. Ele especifica as propriedades CSS e seus valores no início da animação*/
+    from {
+        /*opacity: 0;: Define a opacidade inicial do elemento como 0, tornando-o completamente transparente*/
+        opacity: 0;
+        /*transform: translateY(10px);: Aplica uma translação vertical ao elemento. translateY(10px)move o elemento 10 pixels para baixo de sua posição normal*/
+        transform: translateY(60px);
+    }
+    /*to { ... }: Este bloco define o estado final da animação. Ele especifica as propriedades CSS e seus valores no final da animação.*/
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.Promo h1 {
     color: black;
     text-align: center;
-     margin-top: 20px;
+    margin-top: 20px;
 
 }
-h1{
+
+h1 {
     color: #000000;
     text-align: center;
     margin-top: 50px;
 }
 
- /*Começa as Produtos*/
+/*Começa as Produtos*/
 .container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Para a imagem e o texto começarem do mesmo nível */
-    flex-wrap: nowrap; /* Mantenha tudo em uma linha */
+    align-items: flex-start;
+    /* Para a imagem e o texto começarem do mesmo nível */
+    flex-wrap: nowrap;
+    /* Mantenha tudo em uma linha */
     background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 2000px; /* Aumente a largura máxima se necessário */
-    text-align: left; /* Alinhar texto à esquerda */
+    max-width: 2000px;
+    /* Aumente a largura máxima se necessário */
+    text-align: left;
+    /* Alinhar texto à esquerda */
     margin-top: 20px;
-    gap: 20px; /* Aumente o espaço entre os itens */
+    gap: 20px;
+    /* Aumente o espaço entre os itens */
+
 }
 
 
 .produto {
     background-color: aliceblue;
-    margin: 10px; /* Remova ou ajuste se não necessário */
-    max-width: 400px; /* Largura máxima para cada produto */
+    margin: 10px;
+    /* Remova ou ajuste se não necessário */
+    max-width: 300px;
+    /* Largura máxima para cada produto */
     border-radius: 10px;
-    padding: 10px; /* Adicione padding para espaçar melhor o conteúdo */
-    display: flex; /* Adicione display flex para o conteúdo interno */
-    flex-direction: column; /* Para que o texto fique em coluna */
+    padding: 10px;
+    /* Adicione padding para espaçar melhor o conteúdo */
+    display: flex;
+    /* Adicione display flex para o conteúdo interno */
+    flex-direction: column;
+    /* Para que o texto fique em coluna */
     justify-content: center;
     align-items: center;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produto1 {
+    background-color: aliceblue;
+    margin: 10px;
+    /* Remova ou ajuste se não necessário */
+    max-width: 300px;
+    /* Largura máxima para cada produto */
+    border-radius: 10px;
+    padding: 10px;
+    /* Adicione padding para espaçar melhor o conteúdo */
+    display: flex;
+    /* Adicione display flex para o conteúdo interno */
+    flex-direction: column;
+    /* Para que o texto fique em coluna */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 
 .produto-imagem {
-    max-width: 100%;
+    width: 70%;
     border-radius: 8px;
+    height: auto;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produto-imagem2 {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produto-imagem3 {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.produto-imagem4 {
+    width: 59%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
 }
 
 .produto-nome {
     font-size: 1.5rem;
     margin: 10px 0;
 }
+
 
 .produto-cor {
     color: #666;
@@ -188,6 +281,7 @@ h1{
     font-size: 0.9rem;
     margin: 15px 0;
     color: #555;
+    width: auto;
 }
 
 .sku-e-tamanho {
@@ -195,7 +289,8 @@ h1{
     text-align: left;
 }
 
-.sku, .limite {
+.sku,
+.limite {
     font-size: 0.8rem;
     color: #888;
 }
@@ -219,5 +314,24 @@ select {
 }
 
 .comprar:hover {
-    background-color: #c0392b;
+    background-color: #000000;
+}
+
+.footer {
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+
+}
+
+.footer-text {
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.footer-email {
+    margin: 5px 0 0;
+    color: white;
+    text-decoration: none;
 }

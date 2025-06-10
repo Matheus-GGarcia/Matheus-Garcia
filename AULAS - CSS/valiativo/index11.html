@@ -1,31 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scroll Suave com Só HTML e CSS</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    gap: 16px;
+  }
+  nav a.button-link {
+    display: inline-block;
+    background-color: #6b5cff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  nav a.button-link:hover,
+  nav a.button-link:focus {
+    background-color: #5145cc;
+    outline: none;
+  }
+  section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 20px;
+    background-color: #f0f0ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    color: #3b3b5c;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">SNKRL♥VE</div>
-        <div class="product">
-            <img src="assets/tenis 1.png" alt="Tênis Air Jordan 4">
-            <div class="product-details">
-                <h1>TÊNIS AIR JORDAN 4 RETRO MASCULINO</h1>
-                <span>R$ 1.799,99</span>
-                <span>10x de R$ 179,99</span>
-                <p>Use o cupom de primeira compra no site: <strong>PRIMEIRACOMPRA</strong></p>
-                <p>Lançamentos exclusivos e cashback para usar nas lojas!</p>
-                <a href="#" class="app-link">Baixe agora o App MVP</a>
-                <h2>Outras opções</h2>
-                <ul class="options">
-                    <li>Preto</li>
-                    <li>Branco</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#produtos" class="button-link">Produtos</a></li>
+    </ul>
+  </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+  <main>
+    <section id="produtos">
+      <h1>Produtos</h1>
+      <p>Esta é a seção de produtos onde o conteúdo dos produtos será exibido.</p>
+    </section>
+  </main>
 </body>
 </html>
+
+
+

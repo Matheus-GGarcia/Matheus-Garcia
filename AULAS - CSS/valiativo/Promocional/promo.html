@@ -12,9 +12,9 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li><button><a href="#">Home</a></button></li>
-                <li><button><a href="#Promo">Promoção</a></button></li>
-                <li><button><a href="#Produtos">Produtos</a></button></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Promo">Promoção</a></li>
+                <li><a href="#Produtos">Produtos</a></li>
             </ul>
 
         </nav>
@@ -39,125 +39,132 @@
     </main>
 
     <div class="Promo">
-        <h1>Promoção do Dia </h1>
+        <section id="Promo">
+            <h1>Promoção do Dia </h1>
+        </section>
         <img src="assets/banner.png" alt="foto-promo">
     </div>
 
-    <h1>Produtos</h1>
+
+
+    <section id="Produtos">
+        <h1>Produtos</h1>
+    </section>
+
     <div class="container">
-    <div class="produto">
-        <img src="assets/tenis 1.png" alt="Tênis Air Max 95" class="produto-imagem">
-        <h1 class="produto-nome">Air Max 95 OG (GS)</h1>
-        <h2 class="produto-cor">Bright Mandarin</h2>
-        <p class="produto-preco">R$ 1.099,99</p>
-        <p class="descricao">
-            O AM95 não segue tendências — ele as define. Ele chamou a atenção quando foi lançado
-            originalmente como o primeiro tênis da nossa linha a ter uma unidade Air Max visível
-            no antepé. Camadas onduladas de malha arejada e couro sintético durável ajudam este
-            par a manter esse espírito inovador.
-        </p>
-        <div class="sku-e-tamanho">
-            <p class="sku">SKU: HF/7054-006</p>
-            <p class="limite">Máximo de 3 unidades por CPF</p>
-            <label for="tamanho">Tamanho:</label>
-            <select id="tamanho">
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-            </select>
+        <div class="produto1">
+            <img src="assets/tenis-1-removebg-preview (1).png" alt="Tênis Air Max 95" class="produto-imagem">
+            <h1 class="produto-nome">Air Max 95 OG (GS)</h1>
+            <h2 class="produto-cor">Bright Mandarin</h2>
+            <p class="produto-preco">R$ 1.099,99</p>
+            <p class="descricao">
+                Inspirado no corpo humano, o Nike Air Max 95 combina conforto inacreditável com estilo de virar a
+                cabeça. Os painéis laterais icônicos apresentam cores retrô, enquanto o Nike Air visível no calcanhar e
+                antepé amortece cada passo.
+            </p>
+            <div class="sku-e-tamanho">
+                <p class="sku">SKU: HF/7054-006</p>
+                <p class="limite">Máximo de 3 unidades por CPF</p>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                </select>
+            </div>
+            <button class="comprar">Faça login para comprar</button>
         </div>
-        <button class="comprar">Faça login para comprar</button>
+
+        <div class="produto">
+            <img src="assets/tenis-2-removebg-preview.png" alt="Nike Air Force 1 '07'" class="produto-imagem2">
+            <h1 class="produto-nome">Nike Air Force 1 '07'</h1>
+            <h2 class="produto-cor">Preto</h2>
+            <p class="produto-preco">R$ 759,99</p>
+            <p class="descricao">
+                O brilho perdura no Nike Air Force 1 ’07, o tênis original do basquete que dá um toque de inovação
+                naquilo que você conhece bem: sobreposições costuradas e duráveis, acabamentos simples e a quantidade
+                perfeita de brilho para fazer você se destacar.
+            </p>
+            <div class="sku-e-tamanho">
+                <p class="sku">SKU: CW2288-001</p>
+                <p class="limite">Máximo de 3 unidades por CPF</p>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                </select>
+            </div>
+            <button class="comprar">Faça login para comprar</button>
+        </div>
+        <div class="produto">
+            <img src="assets/tenis-3-removebg-preview.png" alt="Nike Air Max Plus" class="produto-imagem3">
+            <h1 class="produto-nome">Nike Air Max Plus</h1>
+            <h2 class="produto-cor">Preto-Degrade/Roxo e Laranja</h2>
+            <p class="produto-preco">R$ 987,99</p>
+            <p class="descricao">
+                Leve sua atitude ao extremo com a estrutura em formato de chama que adiciona calor às ruas, enquanto a
+                tela arejada mantém o frescor. O Nike Air Max Plus proporciona uma experiência Nike Air ajustada que
+                oferece estabilidade premium e amortecimento inacreditável.
+            </p>
+            <div class="sku-e-tamanho">
+                <p class="sku">SKU: DM0032-014</p>
+                <p class="limite">Máximo de 3 unidades por CPF</p>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                </select>
+            </div>
+            <button class="comprar">Faça login para comprar</button>
+        </div>
+        <div class="produto">
+            <img src="assets/tenis-4-removebg-preview.png" alt="Air Jordan 3 Retro" class="produto-imagem4">
+            <h1 class="produto-nome">Air Jordan 3 Retro</h1>
+            <h2 class="produto-cor">Branco/Azul</h2>
+            <p class="produto-preco">R$ 1.099,99</p>
+            <p class="descricao">
+                A lenda dos calções da sorte do MJ persiste neste AJ3. O couro de qualidade superior em branco Summit
+                combina-se com as sobreposições de camurça em Photon Dust e os detalhes em Legend e azul Hydrogen para
+                homenagear os calções por baixo dos calções. Sempre pensamos que o seu segredo estava no tênis, mas
+                talvez tenha estado nos calções.
+            </p>
+            <div class="sku-e-tamanho">
+                <p class="sku">SKU: CT8532-101</p>
+                <p class="limite">Máximo de 3 unidades por CPF</p>
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                </select>
+            </div>
+            <button class="comprar">Faça login para comprar</button>
+        </div>
     </div>
 
-    <div class="produto">
-        <img src="assets/tenis 1.png" alt="Tênis Air Max 95" class="produto-imagem">
-        <h1 class="produto-nome">Air Max 95 OG (GS)</h1>
-        <h2 class="produto-cor">Bright Mandarin</h2>
-        <p class="produto-preco">R$ 1.099,99</p>
-        <p class="descricao">
-            O AM95 não segue tendências — ele as define. Ele chamou a atenção quando foi lançado
-            originalmente como o primeiro tênis da nossa linha a ter uma unidade Air Max visível
-            no antepé. Camadas onduladas de malha arejada e couro sintético durável ajudam este
-            par a manter esse espírito inovador.
-        </p>
-        <div class="sku-e-tamanho">
-            <p class="sku">SKU: HF/7054-006</p>
-            <p class="limite">Máximo de 3 unidades por CPF</p>
-            <label for="tamanho">Tamanho:</label>
-            <select id="tamanho">
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-            </select>
-        </div>
-        <button class="comprar">Faça login para comprar</button>
-    </div>
-    <div class="produto">
-        <img src="assets/tenis 1.png" alt="Tênis Air Max 95" class="produto-imagem">
-        <h1 class="produto-nome">Air Max 95 OG (GS)</h1>
-        <h2 class="produto-cor">Bright Mandarin</h2>
-        <p class="produto-preco">R$ 1.099,99</p>
-        <p class="descricao">
-            O AM95 não segue tendências — ele as define. Ele chamou a atenção quando foi lançado
-            originalmente como o primeiro tênis da nossa linha a ter uma unidade Air Max visível
-            no antepé. Camadas onduladas de malha arejada e couro sintético durável ajudam este
-            par a manter esse espírito inovador.
-        </p>
-        <div class="sku-e-tamanho">
-            <p class="sku">SKU: HF/7054-006</p>
-            <p class="limite">Máximo de 3 unidades por CPF</p>
-            <label for="tamanho">Tamanho:</label>
-            <select id="tamanho">
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-            </select>
-        </div>
-        <button class="comprar">Faça login para comprar</button>
-    </div>
-    <div class="produto">
-        <img src="assets/tenis 1.png" alt="Tênis Air Max 95" class="produto-imagem">
-        <h1 class="produto-nome">Air Max 95 OG (GS)</h1>
-        <h2 class="produto-cor">Bright Mandarin</h2>
-        <p class="produto-preco">R$ 1.099,99</p>
-        <p class="descricao">
-            O AM95 não segue tendências — ele as define. Ele chamou a atenção quando foi lançado
-            originalmente como o primeiro tênis da nossa linha a ter uma unidade Air Max visível
-            no antepé. Camadas onduladas de malha arejada e couro sintético durável ajudam este
-            par a manter esse espírito inovador.
-        </p>
-        <div class="sku-e-tamanho">
-            <p class="sku">SKU: HF/7054-006</p>
-            <p class="limite">Máximo de 3 unidades por CPF</p>
-            <label for="tamanho">Tamanho:</label>
-            <select id="tamanho">
-                <option value="31">31</option>
-                <option value="32">32</option>
-                <option value="33">33</option>
-                <option value="34">34</option>
-                <option value="35">35</option>
-                <option value="36">36</option>
-                <option value="37">37</option>
-            </select>
-        </div>
-        <button class="comprar">Faça login para comprar</button>
-    </div>
-</div>
 
-          
-
+    <footer class="footer">
+        <p class="footer-text">© 2024 Matheus Garcia</p>
+        <a href="mailto:matheusggarcia.v@gmail.com" class="footer-email">matheusggarcia.v@gmail.com</a>
+    </footer>
 
 
 </body>
