@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 700px;
+
+
+}
+
+#container{
+    display: grid; /*Grid Transformar seu elemento em um quadriculado*/
+    background: #737070;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-template-columns: repeat(7,100px); /*Recebe a quantidade de elementos Colunas*/
+    width: 0;
+    grid-template-rows: repeat(5, 100px); /*repete um elemento Linhas*/
+    grid-template-areas: "Preto Cinza Preto1 Cinza1 Preto2 Cinza2 Preto3"
+                        "Cinza3 Preto4 Cinza4 Preto5 Cinza5 Preto6 Cinza6"
+                        "Preto7 Cinza7 Preto8 Cinza8 Preto9 Cinza9 Preto10"
+                        "Cinza10 Preto11 Cinza11 Preto12 Cinza12 Preto13 Cinza13"
+                        ;
+    
+                                                                                                                                    
+}
+
+.Preto{
+    background-color: black;
+    grid-area: Preto;
+    
+}
+
+.Cinza{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza;
+}
+.Preto1{
+    background-color: black;
+    grid-area: Preto1;
+}
+
+.Cinza1{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza1;
+}
+.Preto2{
+    background-color: black;
+    grid-area: Preto2;
+}
+
+.Cinza2{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza2;
+}
+.Preto3{
+    background-color: black;
+    grid-area: Preto3;
+}
+
+.Cinza3{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza3;
+}.Preto4{
+    background-color: black;
+    grid-area: Preto4;
+}
+
+.Cinza4{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza4;
+}
+
+.Preto5{
+    background-color: black;
+    grid-area: Preto5;
+}
+
+.Cinza5{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza5;
+}
+.Preto6{
+    background-color: black;
+    grid-area: Preto6;
+}
+
+.Cinza6{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza6;
+}
+.Preto7{
+    background-color: black;
+    grid-area: Preto7;
+}
+
+.Cinza7{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza7;
+}
+
+.Preto8{
+    background-color: black;
+    grid-area: Preto8;
+}
+
+.Cinza8{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza8;
+}
+
+.Preto9{
+    background-color: black;
+    grid-area: Preto9;
+}
+
+.Cinza9{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza9;
+}
+.Preto10{
+    background-color: black;
+    grid-area: Preto10;
+}
+
+.Cinza10{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza10;
+}
+.Preto11{
+    background-color: black;
+    grid-area: Preto11;
+}
+
+.Cinza11{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza11;
+}
+.Preto12{
+    background-color: black;
+    grid-area: Preto12;
+}
+
+.Cinza12{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza12;
+}
+.Preto13{
+    background-color: black;
+    grid-area: Preto13;
+}
+
+.Cinza13{
+    background: #3b3b3b;
+    background: linear-gradient(256deg, rgba(115, 112, 112, 1) 0%, rgba(184, 184, 184, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    grid-area: Cinza13;
+}
