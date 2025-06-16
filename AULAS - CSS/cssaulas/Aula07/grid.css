@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: blue;
+}
+
+.caixa{
+    background-color: rgb(191, 31, 223);
+    width: auto;
+    height: 100px;
+}
+
+.caixa2{
+    /*grid-row e grid-column recebem dois valores, sendo o primeiro o valor inicial e o segundo o valor inicial eo segundo o valor final da posilçao do elemnto de acordo com as linhas*/
+
+    grid-row: 3 / 4; /*alinhar na horizontal os elementos do grid*/
+    grid-column: 3 / 4; /*alinhar na vertical o conteudo*/
+}
+
+
