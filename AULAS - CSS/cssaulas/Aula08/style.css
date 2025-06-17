@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#caixa{
+    width: 250px;
+    height: 250px;
+    background-color: rebeccapurple ;
+    color: azure;
+    transition: 1s;
+    border: transparent;
+}
+
+@media screen and (max-width: 375px) {
+    #caixa{
+        background-color: black;
+        transition: 1s;
+        color: blueviolet;
+    }
+    
+}
+
